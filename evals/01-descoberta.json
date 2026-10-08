@@ -1,0 +1,11 @@
+{
+  "skills": ["adseleto-hub"],
+  "query": "Quanto o meu site de receitas faturou ontem?",
+  "expected_behavior": [
+    "Não inventa company_id nem site_id",
+    "Chama contexto_da_conta (ou listar_sites com busca) antes de consultar a receita",
+    "Se houver mais de um site candidato, pergunta qual em vez de escolher sozinho",
+    "Calcula 'ontem' no fuso America/Sao_Paulo e passa start_date e end_date iguais",
+    "Responde o valor com a moeda da rede, sem despejar JSON cru"
+  ]
+}

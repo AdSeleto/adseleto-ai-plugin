@@ -1,0 +1,11 @@
+{
+  "skills": ["adseleto-hub"],
+  "query": "Aumenta o timeout do Prebid do site X para 1500 ms.",
+  "expected_behavior": [
+    "Consulta listar_testes_ab antes de editar e, se houver teste ativo no site, explica que o wrapper está travado",
+    "Lê a configuração atual com consultar_wrapper antes de montar a alteração",
+    "Manda em editar_wrapper só o patch mínimo, sem reenviar a configuração inteira",
+    "Mostra a prévia (caminho alterado, valor antes e depois) e diz que vale para todo o tráfego do site",
+    "Só confirma depois do sim explícito"
+  ]
+}

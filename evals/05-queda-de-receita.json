@@ -1,0 +1,11 @@
+{
+  "skills": ["adseleto-hub"],
+  "query": "A receita do site X caiu muito essa semana. O que aconteceu?",
+  "expected_behavior": [
+    "Usa explorar_site com recorte diario para achar o dia da mudança",
+    "Separa queda de volume (impressões, ad requests) de queda de preço (eCPM)",
+    "Pega valores de filtro em listar_valores_de_dimensao antes de filtrar por ad unit, URL ou origem",
+    "Confere verificar_saude_do_site e o histórico do wrapper se a queda não tiver explicação nos dados",
+    "Não inventa causa: o que não veio dos dados é dito como hipótese"
+  ]
+}

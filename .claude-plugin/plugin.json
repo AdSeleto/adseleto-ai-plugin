@@ -1,0 +1,25 @@
+{
+  "name": "adseleto-hub",
+  "displayName": "AdSeleto Hub — Copilot",
+  "description": "Copilot do conector AdSeleto Hub. Consulta receita, eCPM, ranking de sites, Site Explorer, relatórios, audiência e aquisição, e ajusta precificação, autopilot, fallback, wrapper, testes A/B, redirecionamentos e alertas pelo MCP oficial. Traz a ordem de descoberta dos IDs, as armadilhas de moeda, fuso e paginação, e os guardrails de escrita: toda alteração mostra a prévia e só roda com confirmação explícita.",
+  "version": "1.0.0",
+  "author": {
+    "name": "AdSeleto",
+    "url": "https://github.com/AdSeleto"
+  },
+  "homepage": "https://adseleto.com",
+  "repository": "https://github.com/AdSeleto/adseleto-ai-plugin",
+  "license": "MIT",
+  "keywords": [
+    "adseleto",
+    "hub",
+    "gam",
+    "programatica",
+    "publisher",
+    "receita",
+    "ecpm",
+    "precificacao",
+    "wrapper",
+    "prebid"
+  ]
+}

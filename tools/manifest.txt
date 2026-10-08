@@ -1,0 +1,35 @@
+# Manifesto de tools do conector AdSeleto Hub
+# Fonte: https://mcp.adseleto.com/v1
+# Atualizado em: 2026-10-08, 30 tools (19 leitura, 11 escrita)
+# Para atualizar: veja scripts/check-coverage.mjs
+
+ajustar_fallback
+ajustar_regra_de_preco
+analisar_aquisicao
+analisar_audiencia
+atualizar_site
+cadastrar_site
+configurar_alerta
+configurar_autopilot
+consultar_precificacao
+consultar_wrapper
+contexto_da_conta
+criar_regra_de_preco
+detalhar_site
+editar_wrapper
+explorar_site
+exportar_relatorio
+gerenciar_ramificacao_do_wrapper
+gerenciar_redirecionamento
+gerenciar_teste_ab
+listar_alertas
+listar_campanhas
+listar_redirecionamentos
+listar_relatorios
+listar_sites
+listar_testes_ab
+listar_valores_de_dimensao
+obter_receita
+ranking_de_sites
+rodar_relatorio
+verificar_saude_do_site

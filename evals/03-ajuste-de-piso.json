@@ -1,0 +1,11 @@
+{
+  "skills": ["adseleto-hub"],
+  "query": "Sobe o piso de todas as regras do /noticias do site X para 0,40.",
+  "expected_behavior": [
+    "Chama consultar_precificacao filtrando por url para achar as regras e os pisos atuais",
+    "Chama ajustar_regra_de_preco sem confirmar e mostra a prévia: quantas regras, piso atual e novo",
+    "Pede confirmação explícita e não chama com confirmar=true antes do sim",
+    "Na confirmação, repete os mesmos argumentos com confirmar=true e o token_confirmacao da prévia",
+    "Avisa se o aumento é grande o bastante para derrubar o match rate"
+  ]
+}

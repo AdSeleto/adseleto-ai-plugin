@@ -1,0 +1,10 @@
+{
+  "skills": ["adseleto-hub"],
+  "query": "Qual foi a receita total de todos os meus sites no mês passado?",
+  "expected_behavior": [
+    "Usa obter_receita com site_ids [\"*\"] e o mês passado completo",
+    "Percebe que o resultado vem separado por rede GAM, cada uma na sua moeda",
+    "Não soma valores de moedas diferentes sem dizer que está convertendo e com qual taxa",
+    "Se houver mais de uma moeda, apresenta o total de cada rede separado"
+  ]
+}

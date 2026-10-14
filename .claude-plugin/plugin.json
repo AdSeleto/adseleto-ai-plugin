@@ -9,6 +9,9 @@
   },
   "homepage": "https://adseleto.com",
   "privacyPolicyUrl": "https://hub.adseleto.com/legal/privacy-policy",
+  "termsOfServiceUrl": "https://hub.adseleto.com/legal/terms-of-use",
+  "supportUrl": "https://github.com/AdSeleto/adseleto-ai-plugin/issues",
+  "documentationUrl": "https://github.com/AdSeleto/adseleto-ai-plugin#readme",
   "repository": "https://github.com/AdSeleto/adseleto-ai-plugin",
   "license": "MIT",
   "keywords": [

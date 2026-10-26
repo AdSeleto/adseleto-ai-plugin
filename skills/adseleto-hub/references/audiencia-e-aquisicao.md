@@ -28,6 +28,7 @@ Filtros: `dispositivos` (ex.: `mobile`, `desktop`, `tablet`) e `paises` (código
 - `plataformas` restringe a `google_ads` e/ou `facebook_ads`.
 - `comparar_com`: `previous_day`, `previous_period` ou `none`.
 - `moeda` converte valores (ex.: `USD`, `BRL`). Diga na resposta em que moeda está.
+- **`pago_por_dimensao` com `dimensao: placement` vem paginado**, os de maior receita primeiro: 50 por página por padrão (`limite` vai até 1000, `pagina` começa em 1). Confira `pagination.total` e `pagination.has_more`. Se houver mais, diga quantos placements existem no total e que a análise cobre só os de maior receita, ou peça a página seguinte quando a pergunta exigir a cauda.
 
 ## `listar_campanhas`
 

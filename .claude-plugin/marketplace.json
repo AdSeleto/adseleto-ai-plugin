@@ -9,7 +9,6 @@
     {
       "name": "adseleto-hub",
       "source": "./",
-      "displayName": "📊 AdSeleto Hub — Copilot",
       "description": "Copilot do conector AdSeleto Hub: receita, ranking de sites, Site Explorer, relatórios, audiência, precificação, autopilot, wrapper, testes A/B, redirecionamentos e alertas. Traz a ordem de descoberta, as armadilhas de moeda, fuso e paginação, e os guardrails de escrita. O conector vem junto: no primeiro uso o login do Hub abre sozinho.",
       "category": "produto",
       "keywords": [

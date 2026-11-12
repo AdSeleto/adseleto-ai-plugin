@@ -76,7 +76,7 @@ As alterações feitas pelo Claude entram no histórico de auditoria do Hub, mar
   - exportar para o Google Sheets cria uma planilha na conta Google que você conectou no Hub;
   - alerta com canal Discord envia os disparos para o webhook que você informar;
   - cadastrar site registra as ad units no Google Ad Manager da sua rede.
-- **Nada roda na sua máquina:** o plugin não tem hooks, scripts executados pelo Claude nem comandos locais, e não lê variáveis de ambiente. O `scripts/check-coverage.mjs` é só para quem mantém o plugin.
+- **Nada roda na sua máquina:** o plugin não tem hooks, scripts executados pelo Claude nem comandos locais, e não lê variáveis de ambiente.
 
 ## Limites
 
@@ -105,7 +105,6 @@ skills/adseleto-hub/
     sites-e-saude.md · redirecionamentos-e-alertas.md
 evals/                  cenários de avaliação da skill
 tools/manifest.txt      tools do conector
-scripts/                checagem de cobertura
 ```
 
 ## Contribuindo
@@ -114,11 +113,13 @@ Ao alterar o plugin, **suba a `version` no `.claude-plugin/plugin.json`**: sem i
 
 ### Quando o conector ganhar tools novas
 
-`tools/manifest.txt` lista as tools do conector. O script `scripts/check-coverage.mjs` compara a documentação com ele nos dois sentidos: tool do manifesto que ninguém documentou, e nome citado que não existe (um erro de digitação faz o Claude tentar chamar uma tool inexistente, e nada avisa).
+`tools/manifest.txt` lista as tools do conector. O script `scripts/check-coverage.mjs` não fica no repositório, porque o diretório do Claude só aceita Markdown, texto, JSON, YAML e imagem (veja o `PREVENCAO.md`). Ele compara a documentação com o manifesto nos dois sentidos: tool do manifesto que ninguém documentou, e nome citado que não existe (um erro de digitação faz o Claude tentar chamar uma tool inexistente, e nada avisa).
 
 O endpoint exige login, então não dá para listar as tools automaticamente. Com o conector ligado no Claude Code, peça a lista de tools, atualize o manifesto (um nome por linha) e documente o que entrou:
 
 ```bash
+# traz o script do histórico; a pasta scripts/ está no .gitignore
+mkdir -p scripts && git show 5302fbc:scripts/check-coverage.mjs > scripts/check-coverage.mjs
 node scripts/check-coverage.mjs
 ```
 

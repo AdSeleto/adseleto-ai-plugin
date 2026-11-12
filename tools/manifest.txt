@@ -1,7 +1,7 @@
 # Manifesto de tools do conector AdSeleto Hub
 # Fonte: https://mcp.adseleto.com/v1
 # Atualizado em: 2026-10-08, 30 tools (19 leitura, 11 escrita)
-# Para atualizar: veja scripts/check-coverage.mjs
+# Para atualizar: veja "Quando o conector ganhar tools novas" no README.md
 
 ajustar_fallback
 ajustar_regra_de_preco
